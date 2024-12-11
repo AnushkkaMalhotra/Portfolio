@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posters</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Alata', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+      z-index: 1000;
+    }
+
+    .poster-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .poster {
+      position: relative;
+      width: 450px;
+      height: 340px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .poster img {
+      width: 450px;
+      height: 340px;
+      object-fit:contain;
+      transition: transform 0.3s ease;
+    }
+
+    .poster:hover img {
+      transform: scale(1.1);
+    }
+
+    .poster-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-family: 'Alata', sans-serif;
+    }
+
+    .poster:hover .poster-description {
+      opacity: 1;
+    }
+
+    .poster-title {
+      font-family: 'Clash Display', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .poster-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .title {
+      font-family: 'Clash Display', sans-serif;
+      font-weight: bold;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+<a href="works.html" class="back-arrow">&larr; Back</a>
+
+<h1 class="title">Posters</h1>
+
+
+<div class="poster-container">
+  <div class="poster">
+    <img src="poster1.png" alt="Magazine Cover">
+    <div class="poster-description">
+      <div class="poster-title">Magazine Cover</div>
+      <div class="poster-text">Inspired by magazine covers, I designed this poster capturing a confident old woman. After editing the picture and adding texts, I have created this poster.</div>
+    </div>
+  </div>
+  <div class="poster">
+    <img src="poster2.png" alt="Sonorous">
+    <div class="poster-description">
+      <div class="poster-title">Sonorous</div>
+      <div class="poster-text">I made this poster based on the meaning of "Sonorous." It means loud, deep sound, and through colors and waves, I wanted to get that unsettling feeling of being exposed to loud sounds.</div>
+    </div>
+  </div>
+  <div class="poster">
+    <img src="poster3.png" alt="I'll Be There">
+    <div class="poster-description">
+      <div class="poster-title">I'll Be There</div>
+      <div class="poster-text">This poster is inspired by the song "I'll Be There" by Jin. The song is a rock song that sounds really fun and full of life and colors. It gives you a happy vibe and just makes you smile. I wanted to show that through this poster.</div>
+    </div>
+  </div>
+  <div class="poster">
+    <img src="poster4.png" alt="Neoclassical Poster">
+    <div class="poster-description">
+      <div class="poster-title">Neoclassical Poster</div>
+      <div class="poster-text">This poster follows the Neoclassical era. The architecture during this period was symmetrical, using simple forms and shapes, and this period was a rebellion against the Rococo period. The boldness of this period inspired me further to use such elements and colors.</div>
+    </div>
+  </div>
+  <div class="poster">
+    <img src="poster5.png" alt="Rococo Poster">
+    <div class="poster-description">
+      <div class="poster-title">Rococo Poster</div>
+      <div class="poster-text">I was intrigued by the Rococo Period, from its colors to its history; it is a style that I do not typically use. Taking this as a challenge, I decided to follow the Rococo period for my poster.</div>
+    </div>
+  </div>
+  <div class="poster">
+    <img src="poster6.png" alt="Caving In">
+    <div class="poster-description">
+      <div class="poster-title">Caving In</div>
+      <div class="poster-text">I wanted to capture the feeling of being trapped in this poster. The words are linked, not able to escape each other, as are the well in the background and bricks staring up. It gives you the feeling of being lost and tied down.</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
